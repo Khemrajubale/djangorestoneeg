@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Language
+from .models import Language, LanguageSalesforce
 
 class LanguageSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Language
-        fields = ('id', 'url', 'name', 'paradigm')
+        model = LanguageSalesforce
+        fields = ('name',)
