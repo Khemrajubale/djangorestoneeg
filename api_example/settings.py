@@ -127,3 +127,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 django_heroku.settings(locals())
+
+DISABLE_SERVER_SIDE_CURSORS = True
