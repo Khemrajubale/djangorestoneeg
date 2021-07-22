@@ -129,3 +129,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 django_heroku.settings(locals())
 
 DISABLE_SERVER_SIDE_CURSORS = True
+
+PGBOUNCER_MAX_CLIENT_CONN = 120
+
+DATABASE_URL='postgres://rrwugkhrtgfahk:2ed5238008a6a73df239b6c369e33d572546e4952a2950523ba85c68f802ebd6@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d9epjbn8ghifl2'
